@@ -39,7 +39,7 @@ static void WriteScores(List<string> names, List<int> scores)
         Console.WriteLine(names[i] + " : " + scores[i]);
     }
 
-
+    // not sure why
     static void Thingie(List<string> names, List<int> scores)
     {
         List<int> newScoreOrder = new List<int>();
@@ -70,10 +70,10 @@ static void WriteScores(List<string> names, List<int> scores)
             {
                 if (list[i] > list[i - 1])
                 {
-                    return false;
+                    return true;
                 }
             }
-            return true;
+            return false;
         }
     }
 }
